@@ -5,7 +5,7 @@ class LoginPublic:
 
     @staticmethod
     def get_session(session):
-        url = "http://172.16.40.240:8080/login"
+        url = "http://39.107.121.205:8080/login"
 
         params = {"username": "agentxuzhen", "password": "123456"}
 
