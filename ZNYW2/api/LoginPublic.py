@@ -5,9 +5,9 @@ class LoginPublic:
 
     @staticmethod
     def get_session(session):
-        url = "http://39.107.121.205:8080/login"
+        url = "http://www.sitop365.com/login"
 
-        params = {"username": "agentxuzhen", "password": "123456"}
+        params = {"username": "agentUser1", "password": "123456"}
 
         headers = {}
         # 请求登录服务器获取session值
