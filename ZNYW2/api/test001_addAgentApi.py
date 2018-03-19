@@ -2,6 +2,7 @@
 import requests
 from LoginPublic import LoginPublic
 
+"""代理商增加接口，给数据库添加代理商及代理商管理员"""
 # 使用requests中的Session方法获得session值
 session = requests.Session()
 LoginPublic.get_session(session)

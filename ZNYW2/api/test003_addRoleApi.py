@@ -2,6 +2,7 @@
 import requests
 from LoginPublic import LoginPublic
 
+"""增加角色接口，给数据库添加角色"""
 # 使用requests中的Session方法获得session值
 session = requests.Session()
 LoginPublic.get_session(session)

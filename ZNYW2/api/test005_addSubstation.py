@@ -2,7 +2,7 @@
 import requests
 from LoginPublic import LoginPublic
 
-"""添加人员接口，给数据库添加人员，人员与角色挂钩"""
+"""添加配电室接口"""
 # 使用requests中的Session方法获得session值
 session = requests.Session()
 LoginPublic.get_session(session)

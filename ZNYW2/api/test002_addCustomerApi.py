@@ -3,6 +3,7 @@ import requests
 from LoginPublic import LoginPublic
 import random
 
+"""客户增加接口，给数据库添加客户及客户管理员"""
 # 使用requests中的Session方法获得session值
 session = requests.Session()
 LoginPublic.get_session(session)
