@@ -8,37 +8,45 @@ import random
 session = requests.Session()
 LoginPublic.get_session(session)
 
-url = "http://www.sitop365.com/customer/add"
+# url = "http://www.sitop365.com/customer/add"
+url = "http://172.16.40.240:7777/customer/add"
 
-for i in range(11, 31):
+for i in range(3, 21):
     # 数据
     customerNameValue = "test测试客户" + str(i)
+    customerLinkman = "许臻" + str(i)
+    customerPhone = random.randint(15609100001, 15609109999)
     longitudeValue = random.randint(100, 200)
     latitudeValue = random.randint(10, 100)
-    userNameValue = "customerUserD" + str(i)
+    userNameValue = "customerTest" + str(i)
 
     param = {
-             "customerId": "",
-             "customerName": customerNameValue,
-             "customerLinkman": "许臻",
-             "customerPhone": "15609100803",
-             "agentId": 22,
-             "regionId": 2,
-             "customerState": 0,
-             "customerType": 1,
-             "customerRegisterTime": 1521388800000,
-             "customerExpiryTime": 1528387200000,
-             "longitude": longitudeValue,
-             "latitude": latitudeValue,
-             "customerAddress": "软件新城二期",
-             "customerIntroduction": "客户介绍",
-             "customerPic": "",
-             "username": userNameValue,
-             "password": "123456",
-             "passwordAgain": True,
-             "realName": "许臻",
-             "mobile": "15609100803",
-             "permissionIds": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28"}
+             "tit": "新增客户",
+         "type": 1,
+         "customerId": "",
+         "customerName": customerNameValue,
+         "customerLinkman": customerLinkman,
+         "customerPhone": customerPhone,
+         "agentId": 1,
+         "regionId": "",
+         "customerState": 0,
+         "customerType": 1,
+         "customerRegisterTime": 1523808000000,
+         "customerRegisterTimeElse": "2018-04-15T16:00:00.000Z",
+         "customerExpiryTime": 1523808000000,
+         "customerExpiryTimeElse": "2018-04-15T16:00:00.000Z",
+         "longitude": longitudeValue,
+         "latitude": latitudeValue,
+         "customerAddress": "",
+         "customerIntroduction": "",
+         "customerPic": "",
+         "username": userNameValue,
+         "password": "123456",
+         "passwordAgain": True,
+         "realName": "123213",
+         "mobile": customerPhone,
+         "permissionIds": "1,2,3,4,5,6,7,8,11,12,13,14,15,16,17,18",
+    }
 
     headers = {}
 

@@ -7,9 +7,10 @@ from LoginPublic import LoginPublic
 session = requests.Session()
 LoginPublic.get_session(session)
 
-url = "http://www.sitop365.com/agent/add"
+# url = "http://www.sitop365.com/agent/add"
+url = "http://172.16.40.240:7777/agent/add"
 
-for i in range(1, 11):
+for i in range(21, 51):
     # 数据
     agentNameValue = "test服务商" + str(i)
     agentLinkmanValue = "许臻" + str(i)
@@ -34,7 +35,7 @@ for i in range(1, 11):
              "passwordAgain": True,
              "realName": realNameValue,
              "mobile": "15609100803",
-             "permissionIds": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28"}
+             "permissionIds": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20"}
 
     headers = {}
 
